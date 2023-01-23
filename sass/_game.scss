@@ -1,0 +1,61 @@
+.game{
+    @include flexfunction(column,center,center);
+    background-image: url(../images/bg-triangle.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top:4rem;
+    &__segment-1{
+        @include flexfunction(row,center,center);
+        width: 100%;
+        &--paper{
+            height: 18rem;
+            width: 18rem;
+            border-radius: 100%;
+            background:$color-paper-gradient;
+            margin-right: 7.8rem;
+            @include flexfunction(row,center,center);
+            box-shadow: 0px 5px 1px $color-paper;
+            &--container{
+                height: 13rem;
+                width: 13rem;
+                border-radius:100%;
+                background-color:white;
+                @include flexfunction(row,center,center);
+            }
+        }
+        &--scissor{
+            height: 18rem;
+            width: 18rem;
+            background: $color-scissor-gradient;
+            border-radius: 100%;
+            box-shadow: 0px 5px 1px $color-scissor;
+            @include flexfunction(row,center,center);
+            &--container{
+                height: 13rem;
+                width: 13rem;
+                border-radius:100%;
+                background-color:white;
+                @include flexfunction(row,center,center);
+            }
+        }
+    }
+    &__segment-2{
+        @include flexfunction(row,center,center);
+        width: 100%;
+        &--rock{
+            height: 18rem;
+            width: 18rem;
+            background:$color-rock-gradient;
+            border-radius: 100%;
+            box-shadow: 0px 5px 1px $color-rock;
+            @include flexfunction(row,center,center);
+            &--container{
+                height: 13rem;
+                width: 13rem;
+                border-radius:100%;
+                background-color:white;
+                @include flexfunction(row,center,center);
+            }
+        }
+    }
+}

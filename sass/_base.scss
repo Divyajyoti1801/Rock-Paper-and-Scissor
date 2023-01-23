@@ -1,0 +1,37 @@
+
+html{
+    font-size: 62.5%;
+    
+    @media only screen and (max-width:$bp-nest-hub-max){
+        font-size:60%;
+    }
+    @media only screen and (max-width:$bp-nest-hub){
+        font-size:60%;
+    }
+    @media only screen and (max-width:$bp-tablet-h){
+        font-size:60%;
+    }
+    @media only screen and (max-width:$bp-tablet-v){
+        font-size:54%;
+    }
+    @media only screen and (max-width:$bp-mobile){
+        font-size: 50%;
+    }
+}
+
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+body{
+    box-sizing: border-box;
+    font-size: $font-size-rg;
+    font-weight: $font-weight-rg;
+    font-family: $font-family;
+    background-image: $color-background;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}

@@ -1,0 +1,36 @@
+.header{
+    width: 100%;
+    @include flexfunction(row,center,center);
+    
+    &__banner{
+        margin-top: 1rem;
+        padding: 1.6rem 2.8rem;
+        border: 2px solid $color-header-outline;
+        border-radius: $border-radius;
+        background: transparent;
+        @include flexfunction(row,center,center);
+        &--logo{
+            margin-right: 33rem;
+        }
+        &--score-card{
+            @include flexfunction(column,center,center);
+            background: white;
+            padding: 1.6rem 4.6rem;
+            border-radius: $border-radius;
+            &--text{
+                font-size: $font-size-sm;
+                letter-spacing: 0.2rem;
+                font-weight: $font-weight-xl;
+                color: $color-score-text;
+            }
+            &--score-num{
+                font-size: $font-size-xl;
+                font-weight: $font-weight-xl;
+                color: $color-dark-text;
+                
+            }
+        }
+    }
+    
+
+}

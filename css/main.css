@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
+html {
+  font-size: 62.5%;
+}
+@media only screen and (max-width: 80em) {
+  html {
+    font-size: 60%;
+  }
+}
+@media only screen and (max-width: 64em) {
+  html {
+    font-size: 60%;
+  }
+}
+@media only screen and (max-width: 73.75em) {
+  html {
+    font-size: 60%;
+  }
+}
+@media only screen and (max-width: 51.25em) {
+  html {
+    font-size: 54%;
+  }
+}
+@media only screen and (max-width: 23.4375em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-image: linear-gradient(hsl(214deg, 47%, 23%), hsl(237deg, 49%, 15%));
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.header__banner {
+  margin-top: 1rem;
+  padding: 1.6rem 2.8rem;
+  border: 2px solid hsl(217deg, 16%, 45%);
+  border-radius: 12px;
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.header__banner--logo {
+  margin-right: 33rem;
+}
+.header__banner--score-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  padding: 1.6rem 4.6rem;
+  border-radius: 12px;
+}
+.header__banner--score-card--text {
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+  color: hsl(229deg, 64%, 46%);
+}
+.header__banner--score-card--score-num {
+  font-size: 4.6rem;
+  font-weight: 700;
+  color: hsl(229deg, 25%, 31%);
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/bg-triangle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 4rem;
+}
+.game__segment-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.game__segment-1--paper {
+  height: 18rem;
+  width: 18rem;
+  border-radius: 100%;
+  background: linear-gradient(hsl(230deg, 89%, 62%), hsl(230deg, 89%, 65%));
+  margin-right: 7.8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 5px 1px hsla(230deg, 89%, 62%, 0.616);
+}
+.game__segment-1--paper--container {
+  height: 13rem;
+  width: 13rem;
+  border-radius: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.game__segment-1--scissor {
+  height: 18rem;
+  width: 18rem;
+  background: linear-gradient(hsl(39deg, 89%, 49%), hsl(40deg, 84%, 53%));
+  border-radius: 100%;
+  box-shadow: 0px 5px 1px hsla(39deg, 89%, 49%, 0.527);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.game__segment-1--scissor--container {
+  height: 13rem;
+  width: 13rem;
+  border-radius: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.game__segment-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.game__segment-2--rock {
+  height: 18rem;
+  width: 18rem;
+  background: linear-gradient(hsl(349deg, 71%, 52%), hsl(349deg, 70%, 56%));
+  border-radius: 100%;
+  box-shadow: 0px 5px 1px hsla(349deg, 71%, 52%, 0.623);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.game__segment-2--rock--container {
+  height: 13rem;
+  width: 13rem;
+  border-radius: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=main.css.map */

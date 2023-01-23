@@ -16,7 +16,7 @@ The designs were created to the following widths:
 - Rock Gradient: hsl(349, 71%, 52%) to hsl(349, 70%, 56%)
 - Lizard Gradient: hsl(261, 73%, 60%) to hsl(261, 72%, 63%)
 - Cyan: hsl(189, 59%, 53%) to hsl(189, 58%, 57%)
-
+7
 ### Neutral
 
 - Dark Text: hsl(229, 25%, 31%)

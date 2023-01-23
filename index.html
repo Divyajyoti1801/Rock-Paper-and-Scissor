@@ -2,36 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="css/main.css">
   <title>Frontend Mentor | Rock, Paper, Scissors</title>
-
-  Score
-  Rules
-
-  You Picked
-  The House Picked
-
-  You Win
-  You Lose
-
-  Play Again
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <header class="header">
+    <div class="header__banner">
+      <img src="images/logo.svg" alt="Rock, Paper and Scissors" class="header__banner--logo">
+      <div class="header__banner--score-card">
+        <p class="header__banner--score-card--text">SCORE</p>
+        <h2 class="header__banner--score-card--score-num">12</h2>
+      </div>
+    </div>
+  </header>
+  <section class="game">
+    <div class="game__segment-1">
+      <div class="game__segment-1--paper">
+        <div class="game__segment-1--paper--container">
+           <img src="images/icon-paper.svg" alt="Paper Image" class="game__segment-1--paper--container--img">
+        </div>
+      </div>
+      <div class="game__segment-1--scissor">
+        <div class="game__segment-1--scissor--container">
+           <img src="images/icon-scissors.svg" alt="Scissor Image" class="game__segment-1--scissor--container--img">
+        </div>
+      </div>
+    </div>
+    <div class="game__segment-2">
+      <div class="game__segment-2--rock">
+        <div class="game__segment-2--rock--container">
+           <img src="images/icon-rock.svg" alt="Scissor Image" class="game__segment-2--rock--container--img">
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    
+  </footer>
+  <script src="js/script.js"></script>
 
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>
