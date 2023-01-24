@@ -2,6 +2,11 @@
 html {
   font-size: 62.5%;
 }
+@media only screen and (max-width: 90em) {
+  html {
+    font-size: 58%;
+  }
+}
 @media only screen and (max-width: 80em) {
   html {
     font-size: 60%;
@@ -24,7 +29,7 @@ html {
 }
 @media only screen and (max-width: 23.4375em) {
   html {
-    font-size: 50%;
+    font-size: 40%;
   }
 }
 
@@ -43,6 +48,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
@@ -53,10 +60,10 @@ body {
   align-items: center;
 }
 .header__banner {
-  margin-top: 1rem;
+  margin-top: 4rem;
   padding: 1.6rem 2.8rem;
   border: 2px solid hsl(217deg, 16%, 45%);
-  border-radius: 12px;
+  border-radius: 10px;
   background: transparent;
   display: flex;
   flex-direction: row;
@@ -73,7 +80,7 @@ body {
   align-items: center;
   background: white;
   padding: 1.6rem 4.6rem;
-  border-radius: 12px;
+  border-radius: 10px;
 }
 .header__banner--score-card--text {
   font-size: 1.4rem;
@@ -86,6 +93,23 @@ body {
   font-weight: 700;
   color: hsl(229deg, 25%, 31%);
 }
+@media only screen and (max-width: 51.25em) {
+  .header__banner--logo {
+    margin-right: 11rem;
+  }
+}
+@media only screen and (max-width: 23.4375em) {
+  .header {
+    margin-bottom: 10rem;
+  }
+  .header__banner--logo {
+    width: 120px;
+  }
+}
+
+.hidden {
+  display: none;
+}
 
 .game {
   display: flex;
@@ -95,7 +119,7 @@ body {
   background-image: url(../images/bg-triangle.svg);
   background-repeat: no-repeat;
   background-position: center;
-  padding-top: 4rem;
+  margin-top: 6rem;
 }
 .game__segment-1 {
   display: flex;
@@ -105,8 +129,8 @@ body {
   width: 100%;
 }
 .game__segment-1--paper {
-  height: 18rem;
-  width: 18rem;
+  height: 20rem;
+  width: 20rem;
   border-radius: 100%;
   background: linear-gradient(hsl(230deg, 89%, 62%), hsl(230deg, 89%, 65%));
   margin-right: 7.8rem;
@@ -115,20 +139,26 @@ body {
   justify-content: center;
   align-items: center;
   box-shadow: 0px 5px 1px hsla(230deg, 89%, 62%, 0.616);
+  cursor: pointer;
 }
 .game__segment-1--paper--container {
-  height: 13rem;
-  width: 13rem;
+  height: 15rem;
+  width: 15rem;
   border-radius: 100%;
   background-color: white;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  box-shadow: 0px -5px 1px hsl(217deg, 16%, 45%);
+  transition: all 0.25s ease;
+}
+.game__segment-1--paper--container:active {
+  box-shadow: none;
 }
 .game__segment-1--scissor {
-  height: 18rem;
-  width: 18rem;
+  height: 20rem;
+  width: 20rem;
   background: linear-gradient(hsl(39deg, 89%, 49%), hsl(40deg, 84%, 53%));
   border-radius: 100%;
   box-shadow: 0px 5px 1px hsla(39deg, 89%, 49%, 0.527);
@@ -136,16 +166,22 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .game__segment-1--scissor--container {
-  height: 13rem;
-  width: 13rem;
+  height: 15rem;
+  width: 15rem;
   border-radius: 100%;
   background-color: white;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  box-shadow: 0px -5px 1px hsl(217deg, 16%, 45%);
+  transition: all 0.25s ease;
+}
+.game__segment-1--scissor--container:active {
+  box-shadow: none;
 }
 .game__segment-2 {
   display: flex;
@@ -155,23 +191,111 @@ body {
   width: 100%;
 }
 .game__segment-2--rock {
-  height: 18rem;
-  width: 18rem;
+  height: 20rem;
+  width: 20rem;
   background: linear-gradient(hsl(349deg, 71%, 52%), hsl(349deg, 70%, 56%));
   border-radius: 100%;
   box-shadow: 0px 5px 1px hsla(349deg, 71%, 52%, 0.623);
+  transition: all 0.25s ease;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .game__segment-2--rock--container {
-  height: 13rem;
-  width: 13rem;
+  height: 15rem;
+  width: 15rem;
   border-radius: 100%;
   background-color: white;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  box-shadow: 0px -5px 1px hsl(217deg, 16%, 45%);
+}
+.game__segment-2--rock--container:active {
+  box-shadow: none;
+}
+@media only screen and (max-width: 23.4375em) {
+  .game {
+    background-size: 50%;
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 3rem;
+  padding: 0 2.6rem;
+  width: 100%;
+}
+.footer__cta {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  font-size: 1.8rem;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+  padding: 0.8rem 3.4rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 23.4375em) {
+  .footer {
+    align-self: flex-end;
+    margin-top: 12.8rem;
+    justify-content: center;
+  }
+}
+
+.rules {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transform: all 0.25s ease;
+}
+.rules__card {
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+}
+.rules__card--content {
+  width: 100%;
+  margin-bottom: 2.8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.rules__card--content--header {
+  font-size: 2.6rem;
+  color: hsl(229deg, 25%, 31%);
+}
+.rules__card--content--closer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 23.4375em) {
+  .rules__card {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.hidden {
+  display: none;
 }/*# sourceMappingURL=main.css.map */

@@ -3,7 +3,7 @@
     @include flexfunction(row,center,center);
     
     &__banner{
-        margin-top: 1rem;
+        margin-top: 4rem;
         padding: 1.6rem 2.8rem;
         border: 2px solid $color-header-outline;
         border-radius: $border-radius;
@@ -31,6 +31,26 @@
             }
         }
     }
+    @media only screen and (max-width:$bp-tablet-v){
+        &__banner{
+            &--logo{
+                margin-right: 11rem;
+            }
+        }
+    }
+    
+    @media only screen and (max-width:$bp-mobile){
+        margin-bottom: 10rem;
+        &__banner{
+            &--logo{
+               width: 120px;
+            }
+        }
+    }
     
 
+}
+
+.hidden{
+    display: none;
 }

@@ -2,6 +2,9 @@
 html{
     font-size: 62.5%;
     
+    @media only screen and (max-width:$bp-desktop-std){
+        font-size: 58%;
+    }
     @media only screen and (max-width:$bp-nest-hub-max){
         font-size:60%;
     }
@@ -15,7 +18,7 @@ html{
         font-size:54%;
     }
     @media only screen and (max-width:$bp-mobile){
-        font-size: 50%;
+        font-size: 40%;
     }
 }
 
@@ -34,4 +37,6 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
