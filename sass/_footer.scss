@@ -4,6 +4,7 @@
     margin-bottom: 3rem;
     padding: 0 2.6rem;
     width: 100%;
+    height: 100%;
     
     &__cta{
         background: transparent;
@@ -19,7 +20,7 @@
     }
     
     @media only screen and (max-width:$bp-mobile){
-        align-self: flex-end;
+        align-items: flex-end;
         margin-top: 12.8rem;
         justify-content: center;
     }

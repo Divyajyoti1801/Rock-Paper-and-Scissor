@@ -76,7 +76,211 @@
             cursor: pointer;
         }
     }
+    
+    &__play{
+        @include flexfunction(row,center,center);
+
+        &--segment-1{
+            @include flexfunction(column,center,center);
+            margin-right: 9.4rem;
+            &--text{
+                color:white;
+                font-size: 2rem;
+                font-weight: $font-weight-xl;
+                letter-spacing: 0.3rem;
+                text-transform: uppercase;
+                margin-bottom: 6.4rem;
+            }
+            &--rock{
+                height: 28rem;
+                width: 28rem;
+                background:$color-rock-gradient;
+                border-radius: 100%;
+                box-shadow: 0px 5px 1px $color-rock;
+                transition: all 0.25s ease;
+                @include flexfunction(row,center,center);
+                &--container{
+                    height: 22rem;
+                    width: 22rem;
+                    border-radius:100%;
+                    background-color:white;
+                    @include flexfunction(row,center,center);
+                        box-shadow: 0px -5px 1px $color-header-outline;
+                    &:active{
+                        box-shadow: none;
+                    }
+                }
+            cursor: pointer;
+            }
+            &--paper{
+                height: 28rem;
+                width: 28rem;
+                background:$color-paper-gradient;
+                border-radius: 100%;
+                box-shadow: 0px 5px 1px $color-rock;
+                transition: all 0.25s ease;
+                @include flexfunction(row,center,center);
+                &--container{
+                    height: 22rem;
+                    width: 22rem;
+                    border-radius:100%;
+                    background-color:white;
+                    @include flexfunction(row,center,center);
+                        box-shadow: 0px -5px 1px $color-header-outline;
+                    &:active{
+                        box-shadow: none;
+                    }
+                }
+            cursor: pointer;
+            }
+            &--scissor{
+                height: 28rem;
+                width: 28rem;
+                background:$color-scissor-gradient;
+                border-radius: 100%;
+                box-shadow: 0px 5px 1px $color-rock;
+                transition: all 0.25s ease;
+                @include flexfunction(row,center,center);
+                &--container{
+                    height: 22rem;
+                    width: 22rem;
+                    border-radius:100%;
+                    background-color:white;
+                    @include flexfunction(row,center,center);
+                        box-shadow: 0px -5px 1px $color-header-outline;
+                    &:active{
+                        box-shadow: none;
+                    }
+                }
+            cursor: pointer;
+            }
+        }
+
+        &--segment-result{
+            @include flexfunction(column,center,center);
+            padding:0 7.4rem;
+            &--text{
+                color:white;
+                font-size:4rem;
+                margin-bottom: 2.2rem;
+                letter-spacing: 0.2rem;
+            }
+            
+            &--cta{
+                padding: 1.6rem 5.6rem;
+                background: white;
+                font-family: $font-family;
+                letter-spacing: 0.3rem;
+                color:red;
+                text-transform: uppercase;
+                font-weight: $font-weight-xl;
+                border-radius: $border-radius;
+
+            }
+        }
+        
+        &--segment-2{
+            @include flexfunction(column,center,center);
+            &--text{
+                color:white;
+                font-size: 2rem;
+                font-weight: $font-weight-xl;
+                letter-spacing: 0.3rem;
+                text-transform: uppercase;
+                margin-bottom: 6.4rem;
+            }
+            &--rock{
+                height: 28rem;
+                width: 28rem;
+                background:$color-rock-gradient;
+                border-radius: 100%;
+                box-shadow: 0px 5px 1px $color-rock;
+                transition: all 0.25s ease;
+                @include flexfunction(row,center,center);
+                &--container{
+                    height: 22rem;
+                    width: 22rem;
+                    border-radius:100%;
+                    background-color:white;
+                    @include flexfunction(row,center,center);
+                        box-shadow: 0px -5px 1px $color-header-outline;
+                    &:active{
+                        box-shadow: none;
+                    }
+                }
+            cursor: pointer;
+            }
+            &--paper{
+                height: 28rem;
+                width: 28rem;
+                background:$color-paper-gradient;
+                border-radius: 100%;
+                box-shadow: 0px 5px 1px $color-rock;
+                transition: all 0.25s ease;
+                @include flexfunction(row,center,center);
+                &--container{
+                    height: 22rem;
+                    width: 22rem;
+                    border-radius:100%;
+                    background-color:white;
+                    @include flexfunction(row,center,center);
+                        box-shadow: 0px -5px 1px $color-header-outline;
+                    &:active{
+                        box-shadow: none;
+                    }
+                }
+            cursor: pointer;
+            }
+            &--scissor{
+                height: 28rem;
+                width: 28rem;
+                background:$color-scissor-gradient;
+                border-radius: 100%;
+                box-shadow: 0px 5px 1px $color-rock;
+                transition: all 0.25s ease;
+                @include flexfunction(row,center,center);
+                &--container{
+                    height: 22rem;
+                    width: 22rem;
+                    border-radius:100%;
+                    background-color:white;
+                    @include flexfunction(row,center,center);
+                        box-shadow: 0px -5px 1px $color-header-outline;
+                    &:active{
+                        box-shadow: none;
+                    }
+                }
+            cursor: pointer;
+            }
+        }
+        
+
+    }
+    
     @media only screen and (max-width:$bp-mobile){
         background-size: 50%;
+
+        &__play{
+            &--segment-1{
+                &--rock{
+                    height: 20rem;
+                    width: 20rem;
+                    &--container{
+                        height: 15rem;
+                        width: 15rem;
+                    }
+                }
+            }
+            &--segment-2{
+                &--rock{
+                    height: 20rem;
+                    width: 20rem;
+                    &--container{
+                        height: 15rem;
+                        width: 15rem;
+                    }
+                }
+            }
+        }
     }
 }
