@@ -156,7 +156,7 @@ body {
 .game__segment-1--paper--container:active {
   box-shadow: none;
 }
-.game__segment-1--scissor {
+.game__segment-1--scissors {
   height: 20rem;
   width: 20rem;
   background: linear-gradient(hsl(39deg, 89%, 49%), hsl(40deg, 84%, 53%));
@@ -168,7 +168,7 @@ body {
   align-items: center;
   cursor: pointer;
 }
-.game__segment-1--scissor--container {
+.game__segment-1--scissors--container {
   height: 15rem;
   width: 15rem;
   border-radius: 100%;
@@ -180,7 +180,7 @@ body {
   box-shadow: 0px -5px 1px hsl(217deg, 16%, 45%);
   transition: all 0.25s ease;
 }
-.game__segment-1--scissor--container:active {
+.game__segment-1--scissors--container:active {
   box-shadow: none;
 }
 .game__segment-2 {
@@ -270,7 +270,7 @@ body {
   width: 28rem;
   background: linear-gradient(hsl(230deg, 89%, 62%), hsl(230deg, 89%, 65%));
   border-radius: 100%;
-  box-shadow: 0px 5px 1px hsla(349deg, 71%, 52%, 0.623);
+  box-shadow: 0px 5px 1px hsla(230deg, 89%, 62%, 0.616);
   transition: all 0.25s ease;
   display: flex;
   flex-direction: row;
@@ -292,12 +292,12 @@ body {
 .game__play--segment-1--paper--container:active {
   box-shadow: none;
 }
-.game__play--segment-1--scissor {
+.game__play--segment-1--scissors {
   height: 28rem;
   width: 28rem;
   background: linear-gradient(hsl(39deg, 89%, 49%), hsl(40deg, 84%, 53%));
   border-radius: 100%;
-  box-shadow: 0px 5px 1px hsla(349deg, 71%, 52%, 0.623);
+  box-shadow: 0px 5px 1px hsla(39deg, 89%, 49%, 0.527);
   transition: all 0.25s ease;
   display: flex;
   flex-direction: row;
@@ -305,7 +305,7 @@ body {
   align-items: center;
   cursor: pointer;
 }
-.game__play--segment-1--scissor--container {
+.game__play--segment-1--scissors--container {
   height: 22rem;
   width: 22rem;
   border-radius: 100%;
@@ -316,7 +316,7 @@ body {
   align-items: center;
   box-shadow: 0px -5px 1px hsl(217deg, 16%, 45%);
 }
-.game__play--segment-1--scissor--container:active {
+.game__play--segment-1--scissors--container:active {
   box-shadow: none;
 }
 .game__play--segment-result {
@@ -388,7 +388,7 @@ body {
   width: 28rem;
   background: linear-gradient(hsl(230deg, 89%, 62%), hsl(230deg, 89%, 65%));
   border-radius: 100%;
-  box-shadow: 0px 5px 1px hsla(349deg, 71%, 52%, 0.623);
+  box-shadow: 0px 5px 1px hsla(230deg, 89%, 62%, 0.616);
   transition: all 0.25s ease;
   display: flex;
   flex-direction: row;
@@ -410,12 +410,12 @@ body {
 .game__play--segment-2--paper--container:active {
   box-shadow: none;
 }
-.game__play--segment-2--scissor {
+.game__play--segment-2--scissors {
   height: 28rem;
   width: 28rem;
   background: linear-gradient(hsl(39deg, 89%, 49%), hsl(40deg, 84%, 53%));
   border-radius: 100%;
-  box-shadow: 0px 5px 1px hsla(349deg, 71%, 52%, 0.623);
+  box-shadow: 0px 5px 1px hsla(39deg, 89%, 49%, 0.527);
   transition: all 0.25s ease;
   display: flex;
   flex-direction: row;
@@ -423,7 +423,7 @@ body {
   align-items: center;
   cursor: pointer;
 }
-.game__play--segment-2--scissor--container {
+.game__play--segment-2--scissors--container {
   height: 22rem;
   width: 22rem;
   border-radius: 100%;
@@ -434,7 +434,7 @@ body {
   align-items: center;
   box-shadow: 0px -5px 1px hsl(217deg, 16%, 45%);
 }
-.game__play--segment-2--scissor--container:active {
+.game__play--segment-2--scissors--container:active {
   box-shadow: none;
 }
 @media only screen and (max-width: 23.4375em) {

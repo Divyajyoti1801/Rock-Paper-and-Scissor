@@ -29,7 +29,7 @@
             }
             cursor: pointer;
         }
-        &--scissor{
+        &--scissors{
             height: 20rem;
             width: 20rem;
             background: $color-scissor-gradient;
@@ -117,7 +117,7 @@
                 width: 28rem;
                 background:$color-paper-gradient;
                 border-radius: 100%;
-                box-shadow: 0px 5px 1px $color-rock;
+                box-shadow: 0px 5px 1px $color-paper;
                 transition: all 0.25s ease;
                 @include flexfunction(row,center,center);
                 &--container{
@@ -133,12 +133,12 @@
                 }
             cursor: pointer;
             }
-            &--scissor{
+            &--scissors{
                 height: 28rem;
                 width: 28rem;
                 background:$color-scissor-gradient;
                 border-radius: 100%;
-                box-shadow: 0px 5px 1px $color-rock;
+                box-shadow: 0px 5px 1px $color-scissor;
                 transition: all 0.25s ease;
                 @include flexfunction(row,center,center);
                 &--container{
@@ -215,7 +215,7 @@
                 width: 28rem;
                 background:$color-paper-gradient;
                 border-radius: 100%;
-                box-shadow: 0px 5px 1px $color-rock;
+                box-shadow: 0px 5px 1px $color-paper;
                 transition: all 0.25s ease;
                 @include flexfunction(row,center,center);
                 &--container{
@@ -231,12 +231,12 @@
                 }
             cursor: pointer;
             }
-            &--scissor{
+            &--scissors{
                 height: 28rem;
                 width: 28rem;
                 background:$color-scissor-gradient;
                 border-radius: 100%;
-                box-shadow: 0px 5px 1px $color-rock;
+                box-shadow: 0px 5px 1px $color-scissor;
                 transition: all 0.25s ease;
                 @include flexfunction(row,center,center);
                 &--container{
