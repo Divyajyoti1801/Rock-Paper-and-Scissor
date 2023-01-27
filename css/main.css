@@ -441,6 +441,9 @@ body {
   .game {
     background-size: 50%;
   }
+  .game__play--segment-1 {
+    padding-right: 6rem;
+  }
   .game__play--segment-1--rock {
     height: 20rem;
     width: 20rem;
@@ -449,11 +452,47 @@ body {
     height: 15rem;
     width: 15rem;
   }
+  .game__play--segment-1--paper {
+    height: 20rem;
+    width: 20rem;
+  }
+  .game__play--segment-1--paper--container {
+    height: 15rem;
+    width: 15rem;
+  }
+  .game__play--segment-1--scissors {
+    height: 20rem;
+    width: 20rem;
+  }
+  .game__play--segment-1--scissors--container {
+    height: 15rem;
+    width: 15rem;
+  }
+  .game__play--segment-result {
+    position: absolute;
+    top: 70%;
+  }
   .game__play--segment-2--rock {
     height: 20rem;
     width: 20rem;
   }
   .game__play--segment-2--rock--container {
+    height: 15rem;
+    width: 15rem;
+  }
+  .game__play--segment-2--paper {
+    height: 20rem;
+    width: 20rem;
+  }
+  .game__play--segment-2--paper--container {
+    height: 15rem;
+    width: 15rem;
+  }
+  .game__play--segment-2--scissors {
+    height: 20rem;
+    width: 20rem;
+  }
+  .game__play--segment-2--scissors--container {
     height: 15rem;
     width: 15rem;
   }
